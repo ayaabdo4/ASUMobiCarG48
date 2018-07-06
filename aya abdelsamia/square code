@@ -1,0 +1,57 @@
+char x;
+byte de=11,in=6;
+void Distance (float g);
+void angle (float g);
+void setup() {
+  
+Serial.begin(9600);
+analogWrite(de,155);  //right
+analogWrite(in,165.25);
+  
+}
+
+  void loop() {
+  if(x=='q'){
+  Serial.println("square");
+   analogWrite(de,155);  //right
+  analogWrite(in,165.25);
+
+
+        Distance(30);
+         delay(100);
+         Distance(30);
+      delay(100);
+        Distance(30);
+       delay(100);
+     Distance(20); 
+    delay(100);
+                       angle(150);
+      Distance(30);
+         delay(100);
+         Distance(30);
+      delay(100);
+        Distance(30);
+       delay(100);
+     Distance(20); 
+    delay(100);
+                   angle(150); 
+    Distance(30);
+         delay(100);
+         Distance(30);
+      delay(100);
+        Distance(30);
+       delay(100);
+     Distance(20); 
+    delay(100);
+                     angle(150);
+      Distance(30);
+         delay(100);
+         Distance(30);
+      delay(100);
+        Distance(30);
+       delay(100);
+     Distance(20); 
+    delay(100); 
+    }
+
+}
